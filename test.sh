@@ -1,0 +1,1 @@
+printf " POST /demo/token HTTP/1.1\r\nHost: 172.20.10.2:8000\r\nContent-Type: application/json\r\nContent-Length: %d\r\nConnection: close\r\n\r\n\ $(wc -c < /data/local/tmp/req.json) > /data/local/tmp/full_req; cat /data/local/tmp/req.json >> /data/local/tmp/full_req; nc -w 3 172.20.10.2 8000 < /data/local/tmp/full_req

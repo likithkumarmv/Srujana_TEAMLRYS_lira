@@ -1,0 +1,8 @@
+POST /payments HTTP/1.1
+Host: 172.20.10.2:8000
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c3ItcmFvLTcyIiwiZW1haWwiOiJyYW9AZGVtby5iYW5rIiwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhcHBfcm9sZSI6IkNVU1RPTUVSIiwiY3VzdG9tZXJfaWQiOiJjdXN0LXJhbyIsImF1ZCI6ImF1dGhlbnRpY2F0ZWQiLCJpYXQiOjE3OTI5MTI2NTAsImV4cCI6MTc5MzE3MTg1MH0.VWChvqaDcSWxbpgyA8NlFQFf9J_Mrdz-nRmctlbkA60
+Content-Type: application/json
+Content-Length: 147
+Connection: close
+
+{"amount":850000.0,"recipient_name":"National Cyber Crime Escrow","recipient_account":"ACC-9902-8811","idempotency_key":"test-key-probe-1","memo":null}

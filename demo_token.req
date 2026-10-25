@@ -1,0 +1,7 @@
+POST /demo/token HTTP/1.1
+Host: 172.20.10.2:8000
+Content-Type: application/json
+Content-Length: 26
+Connection: close
+
+{"email":"rao@demo.bank"}

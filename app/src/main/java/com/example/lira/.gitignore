@@ -1,0 +1,51 @@
+# Confidential API Keys & Secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
+services/api/.env
+apps/web/.env
+apps/web/.env.local
+config.h
+secrets.*
+*.key
+*.pem
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+.pytest_cache/
+*.egg-info/
+
+# Node.js & Web
+node_modules/
+apps/web/node_modules/
+dist/
+apps/web/dist/
+.npm
+*.log
+
+# Android & Gradle
+.gradle/
+build/
+app/build/
+*.apk
+*.aab
+local.properties
+
+# PlatformIO & Firmware
+.pio/
+.pioenvs/
+.piolibdeps/
+firmware/esp32_lira_terminal/.pio/
+
+# IDE & OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db

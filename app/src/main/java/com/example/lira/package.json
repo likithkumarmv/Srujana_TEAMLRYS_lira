@@ -1,0 +1,12 @@
+{
+  "name": "lira-workspace",
+  "version": "1.0.0",
+  "description": "LIRA — Financial Fraud Detection & Investigation Platform",
+  "private": true,
+  "scripts": {
+    "dev:web": "npm --prefix apps/web run dev",
+    "build:web": "npm --prefix apps/web run build",
+    "dev:api": "powershell -Command \"$env:Path = 'C:\\Users\\sujee\\AppData\\Local\\Programs\\Python\\Python313;' + $env:Path; cd services/api; python -m uvicorn app.main:app --reload --port 8000\"",
+    "test:api": "powershell -Command \"$env:Path = 'C:\\Users\\sujee\\AppData\\Local\\Programs\\Python\\Python313;' + $env:Path; cd services/api; python -m pytest app/tests\""
+  }
+}
